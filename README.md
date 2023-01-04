@@ -2,15 +2,15 @@
 Analyze a big airline company's present business operations and develop the business by identifying new prospects by evaluating aircraft operations, the reservation process, and customer service interactions.
 
 ## The Grain:
-1- F_Flight_Instance
+- 1- F_Flight_Instance
 The gain for this fact table is every flight instance of a single passenger.
-2- F_Frequent_Flyer_Miles
+- 2- F_Frequent_Flyer_Miles
 The grain for this fact is every transaction or ride the frequent flyer made, either he redeems a reward or make more miles so his score increases.
-3- F_Frequent_Flyer_Hotel
+- 3- F_Frequent_Flyer_Hotel
 The grain for this fact is per booking in hotel, when a frequent flyer book night in a certain hotel for the number of nights during his transit.
-4-F_Customer_Request
+- 4-F_Customer_Request
 The grain is per customer request for every passenger.
-5- F_Customer_Promotion
+- 5- F_Customer_Promotion
 the grain for this fact is per redeem promotion for the frequent flyer.
 
 ## Dimensions:
