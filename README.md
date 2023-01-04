@@ -1,8 +1,7 @@
 # Airline-Data-warehouse-modeling
-Analyze a major airline company's current business processes and expanding the company by discovering new opportunities by Analyzing flight activities, reservation process and customer care interaction.
+Analyze a big airline company's present business operations and develop the business by identifying new prospects by evaluating aircraft operations, the reservation process, and customer service interactions.
 
-Applied using Bill Inmon data model, ERD- Dimensional Modeling (snowflake schema)
-The Grain:
+## The Grain:
 1- F_Flight_Instance
 The gain for this fact table is every flight instance of a single passenger.
 2- F_Frequent_Flyer_Miles
@@ -14,7 +13,7 @@ The grain is per customer request for every passenger.
 5- F_Customer_Promotion
 the grain for this fact is per redeem promotion for the frequent flyer.
 
-Dimensions:
+## Dimensions:
 • D_Airport
 • D_Flight
 • D_Aircraft
@@ -30,14 +29,14 @@ Dimensions:
 • D_CC_Interaction
 • D_CCI_Severity
 
-Facts:
+## Facts:
 • F_Flight_Instance
 • F_Frequent_Flyer_Miles
 • F_Frequent_Flyer_Hotel
 • F_Customer_Requests
 • F_Customer_Promotion
 
-Assumptions:
+## Assumptions:
 A. Assumed that every passenger has a passenger key and frequent flyer id in case he has a frequent flyer id, or null if he doesn’t in the flight instance
 B. Assumed that marketing team manually or automatically with a certain code and bash script that every month check the miles traveled for every passenger and decide if his status is upgraded or degraded, also give him his score if he is a frequent flyer
 C. Assumed if the passenger exceeds 5000 miles, he will gain the blue card and get a frequent flyer id, from 5000-30000 he will be silver, reaches 30000 with last 2 years is gold, reaches 300000 miles with the last 2 years is elite, reaches 600000 with the last 3 years is Platinum
